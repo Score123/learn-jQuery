@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+        div {
+            height: 200px;
+            background: #000;
+        }
+    </style>
+	<script src="jquery-1.11.1.js"></script>
+	<script type="text/javascript">
+		$(document).ready( function(){
+			$("#btnClick").click(function(){
+				$("div").hide();
+			});
+			$("#btnClick2").click(function(){
+				$("div").show();
+			});
+		});
+
+	</script>
+</head>
+<body>
+	<input type="button" id="btnClick" value="隐藏">
+	<input type="button" id="btnClick2" value="显示">
+	<div></div>
+</body>
+</html>
